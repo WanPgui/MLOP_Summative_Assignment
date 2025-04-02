@@ -149,6 +149,16 @@ Choose Docker as the environment, and specify the Dockerfile path if needed.
 
 Set up environment variables if required (e.g., database credentials, API keys).
 
+https://mlop-summative-assignment.onrender.com 
+
+api access to the render web service connect:
+35.160.120.126
+44.233.151.27
+34.211.200.85
+
+https://dashboard.render.com/web/srv-cvmdc69r0fns738u85b0/deploys/dep-cvmk96ruibrs73bikdhg?r=2025-04-02%4014%3A06%3A24%7E2025-04-02%4014%3A11%3A18
+
+
 3. Deploy the Application
 Once the Web Service is created, Render will automatically build the Docker container and deploy the app. You can access the deployed application via the provided URL.
 
