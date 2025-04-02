@@ -20,8 +20,7 @@ WORKDIR /app
 # Copy current directory contents into the container
 COPY . .
 
-# Convert CSV file to a database (if applicable)
-COPY create_db.py /app/create_db.py  
+# Convert CSV file to a database
 RUN python /app/create_db.py || echo "Skipping DB creation"
 
 # Install Python dependencies
@@ -36,4 +35,4 @@ ENV FLASK_RUN_HOST=0.0.0.0
 ENV FLASK_ENV=development 
 
 # Start Flask when the container runs
-CMD ["python", "app.py", "-m", "flask", "run", "--host=0.0.0.0", "--port=5000"]
+CMD ["flask", "run", "--host=0.0.0.0", "--port=5000"]
