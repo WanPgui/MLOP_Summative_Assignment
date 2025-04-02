@@ -16,7 +16,12 @@ This repository contains the code for a Flask web application that loads a machi
 link to the demo video: https://drive.google.com/file/d/1RXgik6iUGlN7PEeijXxc-rF_4onZeyU8/view?usp=sharing
 
 link to the youtube link: https://www.youtube.com/watch?v=Fjij74rheRU
+
+
 ## Google Colab Model Training
+
+https://colab.research.google.com/drive/1pRxUlrLP2C9zG1l3Ct6bmUr8wAH7nne8?usp=sharing
+
 
 ### 1. **Dataset and Model Setup**
 
