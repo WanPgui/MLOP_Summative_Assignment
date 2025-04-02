@@ -4,7 +4,7 @@ joblib
 numpy
 seaborn
 matplotlib
-scikit-learn
-sqlite3
+scikit-learn>=1.0
+
 
 
