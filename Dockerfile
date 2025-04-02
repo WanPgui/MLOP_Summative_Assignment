@@ -1,7 +1,4 @@
-# Use an official Python runtime as a parent image
-FROM python:3.11-slim
-
-# Install system dependencies, including SQLite
+# Install build dependencies and SQLite
 RUN apt-get update && \
     apt-get install -y \
     build-essential \
@@ -17,9 +14,12 @@ RUN apt-get update && \
 # Set the working directory in the container
 WORKDIR /app
 
-# Copy the current directory contents into the container
-COPY . .  
-COPY diabetic_data.csv /app/diabetic_data.csv
+# Copy current directory contents into the container
+COPY . .
+
+# Optionally, convert the CSV file to a database
+COPY create_db.py /app/create_db.py  # Copy the script
+RUN python /app/create_db.py  # Run the script to create the database
 
 # Install Python dependencies
 RUN pip install --no-cache-dir -r requirements.txt
