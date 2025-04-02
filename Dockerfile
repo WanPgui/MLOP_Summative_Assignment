@@ -18,8 +18,8 @@ WORKDIR /app
 COPY . .
 
 # Optionally, convert the CSV file to a database
-COPY create_db.py /app/create_db.py  # Copy the script
-RUN python /app/create_db.py  # Run the script to create the database
+COPY create_db.py /app/create_db.py  
+RUN python /app/create_db.py  
 
 # Install Python dependencies
 RUN pip install --no-cache-dir -r requirements.txt
