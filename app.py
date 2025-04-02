@@ -1,5 +1,3 @@
-with open("app.py", "w") as f:
-    f.write('''\
 import os
 import joblib
 import pandas as pd
@@ -257,5 +255,7 @@ def home():
 
 if __name__ == '__main__':
     load_model()
-    app.run(host='0.0.0.0', port=5005)
-''')
+    port = int(os.environ.get("PORT", 5000))  
+    app.run(host="0.0.0.0", port=port)  
+
+
