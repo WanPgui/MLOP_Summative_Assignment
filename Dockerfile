@@ -36,4 +36,4 @@ ENV FLASK_RUN_HOST=0.0.0.0
 ENV FLASK_ENV=development 
 
 # Start Flask when the container runs
-CMD ["python", "-m", "flask", "run", "--host=0.0.0.0", "--port=5000"]
+CMD ["python", "app.py", "-m", "flask", "run", "--host=0.0.0.0", "--port=5000"]
