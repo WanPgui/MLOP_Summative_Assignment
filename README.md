@@ -154,6 +154,8 @@ Set up environment variables if required (e.g., database credentials, API keys).
 
 https://mlop-summative-assignment.onrender.com 
 
+Running on all addresses (0.0.0.0)
+
 api access to the render web service connect:
 35.160.120.126
 44.233.151.27
