@@ -20,7 +20,7 @@ link to the youtube link: https://www.youtube.com/watch?v=Fjij74rheRU
 
 ## Google Colab Model Training
 
-https://colab.research.google.com/github/WanPgui/MLOP_Summative_Assignment/blob/main/Summative_assignment_MLOP.ipynb
+https://colab.research.google.com/drive/1pRxUlrLP2C9zG1l3Ct6bmUr8wAH7nne8?usp=sharing
 
 
 ### 1. **Dataset and Model Setup**
